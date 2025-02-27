@@ -29,7 +29,7 @@ if st.button('Classify'):
 
     # Make prediction:
     prediction = model.predict(preprocessed_input)
-    sentiment = 'Positive' if prediction[0][0] > 0.95 else 'Negative'
+    sentiment = 'Positive' if prediction[0][0] > 0.97 else 'Negative'
     st.write(sentiment)
 else:
     st.write('Please enter the movie review.')
